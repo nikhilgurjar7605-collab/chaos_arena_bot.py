@@ -2,15 +2,12 @@ app = "chaos-arena-bot"
 primary_region = "sin"
 
 [build]
-# If you have a Dockerfile, Fly will find it. 
-# If not, ensure you have requirements.txt or package.json.
 
 [env]
   PORT = "8080"
 
-# REMOVED: [[services]] 
-# (Unless you are using Webhooks, you don't need this section. 
-# Removing it prevents "Health Check" deployment failures.)
 [mounts]
-  source = "bot_data"
+  source = "chaos_data"
   destination = "/app/data"
+
+# No [[services]] needed for a polling bot!
