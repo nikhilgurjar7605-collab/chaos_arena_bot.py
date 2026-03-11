@@ -1,1 +1,3 @@
-python-telegram-bot==20.7
+pyTelegramBotAPI
+python-dotenv
+# Add any other libraries your bot needs here
