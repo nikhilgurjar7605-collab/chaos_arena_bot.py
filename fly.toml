@@ -2,10 +2,12 @@ app = "chaos-arena-bot"
 primary_region = "sin"
 
 [build]
+# If you have a Dockerfile, Fly will find it. 
+# If not, ensure you have requirements.txt or package.json.
 
 [env]
   PORT = "8080"
 
-[[services]]
-  internal_port = 8080
-  protocol = "tcp"
+# REMOVED: [[services]] 
+# (Unless you are using Webhooks, you don't need this section. 
+# Removing it prevents "Health Check" deployment failures.)
