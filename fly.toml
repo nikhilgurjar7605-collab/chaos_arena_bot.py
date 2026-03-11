@@ -11,3 +11,6 @@ primary_region = "sin"
 # REMOVED: [[services]] 
 # (Unless you are using Webhooks, you don't need this section. 
 # Removing it prevents "Health Check" deployment failures.)
+[mounts]
+  source = "bot_data"
+  destination = "/app/data"
