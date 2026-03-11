@@ -1,3 +1,4 @@
 pyTelegramBotAPI
 python-dotenv
 # Add any other libraries your bot needs here
+python-telegram-bot
