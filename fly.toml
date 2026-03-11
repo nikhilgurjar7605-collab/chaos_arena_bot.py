@@ -1,0 +1,11 @@
+app = "chaos-arena-bot"
+primary_region = "sin"
+
+[build]
+
+[env]
+  PORT = "8080"
+
+[[services]]
+  internal_port = 8080
+  protocol = "tcp"
